@@ -1,0 +1,8 @@
+*
+!/**/
+!*.*
+!Makefile
+.DS_Store
+src/Assets.xcassets/*
+!src/Assets.xcassets/AppIcon.appiconset
+!src/Assets.xcassets/AccentColor.colorset
