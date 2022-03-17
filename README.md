@@ -26,4 +26,4 @@ To build a DMG installer, type `make image`.
 
 ### Change the Name of the Executable
 
-Open the Makefile and adjust the first three variables to your liking.
+Open the Makefile and adjust the first four variables to your liking.
