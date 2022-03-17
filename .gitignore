@@ -2,6 +2,7 @@
 !/**/
 !*.*
 !Makefile
+temp
 .DS_Store
 src/Assets.xcassets/*
 !src/Assets.xcassets/AppIcon.appiconset
