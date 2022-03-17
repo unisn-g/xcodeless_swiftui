@@ -8,8 +8,11 @@ execname = sys.argv[1]
 bundleid = sys.argv[2]
 storyboard = sys.argv[3]
 
-oldpath = os.path.dirname(__file__) + "/oldInfo.plist"
-newpath = os.path.dirname(__file__) + "/Info.plist"
+template = "oldInfo.plist"
+newplist = "Info.plist"
+
+oldpath = os.path.dirname(__file__) + "/" + template
+newpath = os.path.dirname(__file__) + "/" + newplist
 
 with open(oldpath, 'r') as file:
     data = file.read()

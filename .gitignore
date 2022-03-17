@@ -6,3 +6,4 @@
 src/Assets.xcassets/*
 !src/Assets.xcassets/AppIcon.appiconset
 !src/Assets.xcassets/AccentColor.colorset
+!src/Assets.xcassets/Contents.json
