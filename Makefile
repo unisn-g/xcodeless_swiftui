@@ -27,5 +27,12 @@ $(TEMP)/Info.plist:
 $(APPNAME): $(SOURCES)
 	swiftc $(OPTS) $(LIBS) $^ -o $@
 
+image: $(BUILD)/$(APPNAME).app/Contents/MacOS/$(APPNAME) $(BUILD)/$(APPNAME).app/Contents/Info.plist $(BUILD)/$(APPNAME).app/Contents/Resources/Assets.car
+	mkdir $(BUILD)/temp
+	cp -r $(BUILD)/$(APPNAME).app $(BUILD)/temp/$(APPNAME).app
+	ln -s /Applications $(BUILD)/temp
+	hdiutil create -srcfolder $(BUILD)/temp -volname $(APPNAME) $(BUILD)/$(APPNAME)_installer.dmg
+	rm -rf $(BUILD)/temp
+
 clean:
 	rm -rf $(APPNAME) $(BUILD)/* $(TEMP)/*
