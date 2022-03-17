@@ -1,6 +1,7 @@
 APPNAME := main
 BUNDLEID := me.$(shell whoami)
 STORYBOARDNAME := Main
+VERSION := 0.1
 
 SRC := src
 TEMP := temp
@@ -31,7 +32,7 @@ image: $(BUILD)/$(APPNAME).app/Contents/MacOS/$(APPNAME) $(BUILD)/$(APPNAME).app
 	mkdir $(BUILD)/temp
 	cp -r $(BUILD)/$(APPNAME).app $(BUILD)/temp/$(APPNAME).app
 	ln -s /Applications $(BUILD)/temp
-	hdiutil create -srcfolder $(BUILD)/temp -volname $(APPNAME) $(BUILD)/$(APPNAME)_installer.dmg
+	hdiutil create -srcfolder $(BUILD)/temp -volname $(APPNAME) $(BUILD)/$(APPNAME)-$(VERSION)-installer.dmg
 	rm -rf $(BUILD)/temp
 
 clean:
