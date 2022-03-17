@@ -8,7 +8,7 @@ execname = sys.argv[1]
 bundleid = sys.argv[2]
 storyboard = sys.argv[3]
 
-template = "oldInfo.plist"
+template = "tInfo.plist"
 newplist = "Info.plist"
 
 oldpath = os.path.dirname(__file__) + "/" + template
