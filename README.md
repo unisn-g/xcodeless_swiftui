@@ -19,6 +19,9 @@ The scripts that create the .plist files require python to run.
 ## Building the Project
 
 To build the project, navigate to the root folder and type `make`. This will create a folder called build with an application in it. Double click on it to run the application.
+
+To build a DMG installer, type `make image`.
+
 `make clean` will clean out the build folder.
 
 ### Change the Name of the Executable
